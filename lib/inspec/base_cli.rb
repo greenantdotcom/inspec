@@ -44,6 +44,8 @@ module Inspec
         desc: 'Allow remote scans with self-signed certificates (WinRM).'
       option :json_config, type: :string,
         desc: 'Read configuration from JSON file (`-` reads from stdin).'
+      option :auth_methods, type: :array,
+        desc: 'SSH Authentication Methods, e.g. publickey or password)'
     end
 
     def self.profile_options
